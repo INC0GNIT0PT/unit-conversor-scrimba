@@ -1,0 +1,126 @@
+@font-face {
+  src: url("../media/fonts/Inter/Inter_18pt-Medium.ttf");
+  font-family: Inter-medium;
+}
+@font-face {
+  src: url("../media/fonts/Inter/Inter_18pt-Regular.ttf");
+  font-family: Inter-regular;
+}
+@font-face {
+  src: url("../media/fonts/Inter/Inter_18pt-SemiBold.ttf");
+  font-family: Inter-semibold;
+}
+@font-face {
+  src: url("../media/fonts/Inter/Inter_28pt-ExtraBold.ttf");
+  font-family: Inter-extrabold;
+}
+
+:root {
+  --white: #fff;
+  --bg-cont-1: #6943FF;
+  --color-h2: #CCC1FF;
+  --bg-cont-2:#1F2937;
+  --bg-cont-2-1:#273549;
+  --input-border: #B295FF;
+  --btn-border:#3D3D3D;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+main{
+  text-align: center;
+  margin: 0px auto;
+  width: 550px;
+  height: 729px;
+}
+
+/* INPUT section */
+.input-cont {
+  height: 285px;
+  background-color: var(--bg-cont-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h2 {
+  margin: 33px 51px 30px 51px;
+  font-family: Inter-extrabold;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -3%;
+  color: var(--white)
+}
+
+#num-el {
+  margin: 0px 217px 30px 217px;
+  width: 117px;
+  height: 83px;
+  font-size: 58px;
+  font-family: Inter-extrabold;
+  color: var(--white);
+  text-align: center;
+  background: var(--bg-cont-1);
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+}
+
+button {
+  width: 117px;
+  height: 42px;
+  margin: 0px 217px 34px 217px;
+  font-family: Inter-medium;
+  color: var(--btn-border);
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 5px;
+  border: none;
+}
+
+
+
+.output-cont {
+  height:444px;
+  background: var(--bg-cont-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.output {
+  width: 500px;
+  height: 108.57px;
+  background: var(--bg-cont-2-1);
+
+}
+
+h3 {
+  width: 346px;
+  height: 25px;
+  margin: 31px 77px 9px 77px;
+  font-family: Inter-semibold;
+  font-size: 20px;
+  line-height: 20px;
+  color:var(--color-h2)
+}
+
+p {
+  margin: 9px 77px 18.5px 77px;
+  font-family: Inter-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--white);
+}
